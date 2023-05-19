@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "log-monitor"
+name = "logging-monitor"
 version = "0.1.0"
 description = ""
 authors = ["DZIUREWICZ Piotr <dziurewiczpiotr@gmail.com>"]
 readme = "README.md"
-packages = [{include = "log_monitor"}]
+packages = [{include = "logging_monitor"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"

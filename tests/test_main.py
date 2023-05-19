@@ -1,4 +1,4 @@
-from log_monitor.main import app
+from logging_monitor.main import app
 from fastapi.testclient import TestClient
 
 client = TestClient(app)
