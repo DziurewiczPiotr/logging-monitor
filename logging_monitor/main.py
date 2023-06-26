@@ -1,10 +1,5 @@
-from typing import Union
-
 from fastapi import FastAPI
+from logging_monitor.routers import api
 
-app = FastAPI()
-
-
-@app.get("/")
-async def read_root():
-    return {"Hello": "World"}
+app = FastAPI(title="logging-monitor-api")
+app.include_router(api.router, prefix="/api")
